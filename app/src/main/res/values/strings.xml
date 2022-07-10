@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Safer</string>
+    <string name="setup">Setup</string>
+    <string name="start_setup">Start setup</string>
+    <string name="accounts_users">Remove accounts</string>
+    <string name="accounts_desc">To continue to setup Safer, you will need to remove all accounts from your device. This will NOT permanently delete them, and you will be able to re-add them after.</string>
+    <string name="acc_settings">Account settings</string>
+    <string name="need_a_pc">After removing the accounts, you will need access to a computer with an Internet browser to continue the setup.</string>
+    <string name="have_access_to_pc">I have access to a computer</string>
+    <string name="continue_">Continue</string>
 </resources>

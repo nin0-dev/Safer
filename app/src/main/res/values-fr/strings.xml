@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safer</string>
+    <string name="setup">Configuration</string>
+    <string name="start_setup">Commencer la configuration</string>
+    <string name="accounts_users">Retirer les comptes</string>
+    <string name="accounts_desc">Pour continuer la configuration, vous devrez retirer tous les comptes de votre appareil. Ceci ne va PAS les supprimer définitivement, et vous pourrez les réajouter plus tard. Vous pouvez retirer vos comptes en cliquant sur chacun d\'entre eux, puis en appuyant \"Supprimer le compte\". Quand vous aurez terminé, retournez dans Safer.</string>
+    <string name="acc_settings">Paramètres des comptes</string>
+    <string name="need_a_pc">Après avoir retiré les comptes, vous aurez besoin d\'un ordinateur avec un navigateur Internet pour continuer la configuration.</string>
+    <string name="have_access_to_pc">J\'ai accès à un ordinateur</string>
+    <string name="continue_">Continuer</string>
+</resources>
