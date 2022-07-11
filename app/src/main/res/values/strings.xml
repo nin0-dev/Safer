@@ -13,4 +13,7 @@
     <string name="back">Back</string>
     <string name="enableAdbDebugging">Enable USB debugging</string>
     <string name="debugging_desc">"You will also need to enable the USB debugging feature of your device. It's very simple, and like the developer options, you can disable it after setup and it won't void your warranty.\n\nTo do so, you will need to click Continue, find \"USB debugging\" on the list, enable it, and accept the warning. After doing this, go back to Safer. "</string>
+    <string name="pc_setup">PC setup</string>
+    <string name="pc_setup_desc">On your computer, make sure that you use the Google Chrome or Opera browser. Open this website in one of these 2 browsers:</string>
+    <string name="follow_instructions">After opening the website, follow the instructions on it..</string>
 </resources>

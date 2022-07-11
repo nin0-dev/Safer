@@ -14,4 +14,7 @@
     <string name="back">Retour</string>
     <string name="enableAdbDebugging">Activer le débogage USB</string>
     <string name="debugging_desc">Vous devrez également activer la fonction de débogage USB de votre appareil. C\'est simple à effectuer, et comme les options de développement, vous pourrez le désactiver après l\'installation et cela n\'annulera pas votre garantie.\n\nPour l\'activer, vous devrez cliquer sur Continuer, rechercher \"Débogage USB\" dans la liste, l\'activer et accepter l\'avertissement. Après cela, retournez dans Safer.</string>
+    <string name="pc_setup">Configuration ordinateur</string>
+    <string name="pc_setup_desc">Assurez-vous que sur votre ordinateur, vous utilisez le navigateur Google Chrome ou Opera. Si oui, ouvrez ce site web sur un des deux navigateurs:</string>
+    <string name="follow_instructions">Après avoir ouvert le site Web, suivez les instructions sur le site.</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.nin0dev.lostmode
+package com.nin0dev.safer
 
 import android.app.admin.DeviceAdminReceiver
 import android.content.Context

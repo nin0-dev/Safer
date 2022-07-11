@@ -27,8 +27,10 @@ class MainActivity : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.nextButton)
         val backButton = findViewById<Button>(R.id.backButton)
         val backButton2 = findViewById<Button>(R.id.backButton2)
+        val backButton3 = findViewById<Button>(R.id.backButton3)
         val devOptionsButton = findViewById<Button>(R.id.showDevOptionsButton)
         val accountsButton = findViewById<Button>(R.id.accountSettingsButton)
+        val checkPermsButton = findViewById<Button>(R.id.checkPermsButton)
         val aboutPhoneButton = findViewById<Button>(R.id.showAboutPhoneButton)
 
         startSetupButton.setOnClickListener {
@@ -59,9 +61,18 @@ class MainActivity : AppCompatActivity() {
             findViewById<CoordinatorLayout>(R.id.devOptions).visibility = VISIBLE
             findViewById<CoordinatorLayout>(R.id.adbDebugging).visibility = GONE
         }
+        backButton3.setOnClickListener {
+            findViewById<CoordinatorLayout>(R.id.adbDebugging).visibility = VISIBLE
+            findViewById<CoordinatorLayout>(R.id.connectToPC).visibility = GONE
+        }
         devOptionsButton.setOnClickListener {
             val intent = Intent(ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
             startActivity(intent)
+            findViewById<CoordinatorLayout>(R.id.adbDebugging).visibility = GONE
+            findViewById<CoordinatorLayout>(R.id.connectToPC).visibility = VISIBLE
+        }
+        checkPermsButton.setOnClickListener {
+
         }
 
     }
