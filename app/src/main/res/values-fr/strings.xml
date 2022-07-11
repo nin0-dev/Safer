@@ -9,4 +9,9 @@
     <string name="need_a_pc">Après avoir retiré les comptes, vous aurez besoin d\'un ordinateur avec un navigateur Internet pour continuer la configuration.</string>
     <string name="have_access_to_pc">J\'ai accès à un ordinateur</string>
     <string name="continue_">Continuer</string>
+    <string name="dev_desc">Pour permettre au téléphone de se connecter à l\'ordinateur, vous devez activer les options de développeur de votre appareil. Ne vous inquiétez pas; c\'est très facile à faire et n\'invalidera pas votre garantie. Vous pourrez même les désactiver après la configuration.\n\nPour ce faire, vous devrez cliquer sur "Continuer", trouver "Numéro de version" dans la liste et cliquer dessus 7 fois. Vous devrez peut-être saisir votre code PIN/mot de passe. Après ça, retournez sur Safer.</string>
+    <string name="dev_options">Activer les options de développement</string>
+    <string name="back">Retour</string>
+    <string name="enableAdbDebugging">Activer le débogage USB</string>
+    <string name="debugging_desc">Vous devrez également activer la fonction de débogage USB de votre appareil. C\'est simple à effectuer, et comme les options de développement, vous pourrez le désactiver après l\'installation et cela n\'annulera pas votre garantie.\n\nPour l\'activer, vous devrez cliquer sur Continuer, rechercher \"Débogage USB\" dans la liste, l\'activer et accepter l\'avertissement. Après cela, retournez dans Safer.</string>
 </resources>
