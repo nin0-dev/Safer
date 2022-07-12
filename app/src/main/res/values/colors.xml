@@ -53,4 +53,6 @@
     <color name="md_theme_dark_shadow">#000000</color>
     <color name="md_theme_dark_surfaceTint">#201a19</color>
     <color name="md_theme_dark_surfaceTintColor">#534341</color>
+    <color name="colorsnackbarSurface">#eeaaaa</color>
+    <color name="snackbarText">#000000</color>
 </resources>

@@ -16,4 +16,7 @@
     <string name="pc_setup">PC setup</string>
     <string name="pc_setup_desc">On your computer, make sure that you use the Google Chrome or Opera browser. Open this website in one of these 2 browsers:</string>
     <string name="follow_instructions">After opening the website, follow the instructions on it..</string>
+    <string name="devOptionsNotEnabled">Developer options not enabled</string>
+    <string name="saferpin">Safer PIN</string>
+    <string name="pin_desc">Set a 4 to 8 digit PIN code for Safer. It will be required to access your device remotely, lift restrictions, or to uninstall the app.</string>
 </resources>
