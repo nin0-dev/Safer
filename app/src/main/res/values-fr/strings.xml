@@ -20,4 +20,7 @@
     <string name="devOptionsNotEnabled">Options de développement désactivées</string>
     <string name="saferpin">NIP Safer</string>
     <string name="pin_desc">Choisissez un code PIN de 4 à 8 chiffres pour Safer. Il sera nécessaire pour accéder à l\'appareil à distance, réinitialiser l\'appareil ou lever des restrictions.</string>
+    <string name="usbDebugOff">Débogage USB désactivé</string>
+    <string name="permsNotGranted">Permissions non accordées, assurez-vous que toutes les étapes ont été suivies</string>
+    <string name="too_short">Trop court</string>
 </resources>

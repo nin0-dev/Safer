@@ -12,11 +12,148 @@
         android:orientation="vertical">
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/finalTouches"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <!-- Note: A RecyclerView can also be used -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_anchorGravity="bottom|center">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/topAppBar7"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorSecondaryContainer"
+                        android:visibility="visible"
+                        app:liftOnScroll="true"
+                        app:title="@string/saferpin"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/pin_desc"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <EditText
+                            android:id="@+id/fgd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="100dp"
+                            android:layout_marginTop="50dp"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:foregroundTint="#FFFFFF"
+                            android:gravity="center"
+                            android:inputType="numberPassword"
+                            android:maxLength="8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="3dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/bottom222222"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="end">
+
+                            <Button
+                                android:id="@+id/saveSaferPINButton"
+                                style="@style/Widget.Material3.Button.Icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginEnd="13dp"
+                                android:layout_marginBottom="5dp"
+                                android:enabled="true"
+                                android:text="@string/continue_"
+                                app:icon="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </TableRow>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/pin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone"
-            tools:visibility="visible">
+            tools:visibility="gone">
 
             <!-- Note: A RecyclerView can also be used -->
 
@@ -60,16 +197,24 @@
                             android:text="@string/pin_desc"
                             android:textSize="16sp" />
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+
                         <EditText
-                            android:id="@+id/editTextNumberPassword"
+                            android:id="@+id/setup_pin_field"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="100dp"
                             android:layout_marginTop="50dp"
-                            android:editable="false"
+                            android:clickable="false"
                             android:ems="10"
+                            android:enabled="false"
+                            android:foregroundTint="#FFFFFF"
                             android:gravity="center"
-                            android:inputType="numberPassword" />
+                            android:inputType="numberPassword"
+                            android:maxLength="8" />
 
                         <TableLayout
                             android:layout_width="match_parent"
@@ -115,7 +260,7 @@
                                 android:gravity="center">
 
                                 <Button
-                                    android:id="@+id/setup_pin_"
+                                    android:id="@+id/setup_pin_4"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -124,7 +269,7 @@
                                     android:textSize="24sp" />
 
                                 <Button
-                                    android:id="@+id/setup_pin_4"
+                                    android:id="@+id/setup_pin_5"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -133,7 +278,7 @@
                                     android:textSize="24sp" />
 
                                 <Button
-                                    android:id="@+id/setup_pin_5"
+                                    android:id="@+id/setup_pin_6"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -148,7 +293,7 @@
                                 android:gravity="center">
 
                                 <Button
-                                    android:id="@+id/setup_pin_6"
+                                    android:id="@+id/setup_pin_7"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -157,7 +302,7 @@
                                     android:textSize="24sp" />
 
                                 <Button
-                                    android:id="@+id/setup_pin_7"
+                                    android:id="@+id/setup_pin_8"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -166,7 +311,7 @@
                                     android:textSize="24sp" />
 
                                 <Button
-                                    android:id="@+id/setup_pin_8"
+                                    android:id="@+id/setup_pin_9"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -181,7 +326,7 @@
                                 android:gravity="center">
 
                                 <Button
-                                    android:id="@+id/setup_pin_6"
+                                    android:id="@+id/setup_pin_erase"
                                     style="@style/Widget.Material3.Button.ElevatedButton.Icon"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -194,7 +339,7 @@
                                     app:iconSize="30dp" />
 
                                 <Button
-                                    android:id="@+id/setup_pin_7"
+                                    android:id="@+id/setup_pin_0"
                                     style="@style/Widget.Material3.Button.TonalButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="95dp"
@@ -203,12 +348,17 @@
                                     android:textSize="24sp" />
 
                                 <Button
-                                    android:id="@+id/button8"
+                                    android:id="@+id/setup_pin_visible"
+                                    style="@style/Widget.Material3.Button.ElevatedButton.Icon"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:enabled="false"
-                                    android:text="Button"
-                                    android:visibility="invisible" />
+                                    android:layout_height="95dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:gravity="center"
+                                    android:paddingRight="30dp"
+                                    app:icon="@drawable/ic_baseline_remove_red_eye_24"
+                                    app:iconGravity="textEnd"
+                                    app:iconPadding="10dp"
+                                    app:iconSize="30dp" />
 
                             </TableRow>
 
@@ -249,31 +399,12 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:id="@+id/bottom2222"
+                        android:id="@+id/bottom22222"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="bottom"
                         android:gravity="bottom"
                         android:orientation="horizontal">
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="end">
-
-                            <Button
-                                android:id="@+id/backButton3"
-                                style="@style/Widget.Material3.Button.TonalButton.Icon"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|end"
-                                android:layout_marginLeft="13dp"
-                                android:layout_marginBottom="5dp"
-                                android:enabled="true"
-                                android:text="@string/back"
-                                app:icon="@drawable/ic_baseline_arrow_back_24" />
-
-                        </TableRow>
 
                         <TableRow
                             android:layout_width="match_parent"
@@ -282,7 +413,7 @@
                             android:gravity="end">
 
                             <Button
-                                android:id="@+id/checkPermsButton"
+                                android:id="@+id/saveSaferPINButton"
                                 style="@style/Widget.Material3.Button.Icon"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

@@ -19,4 +19,7 @@
     <string name="devOptionsNotEnabled">Developer options not enabled</string>
     <string name="saferpin">Safer PIN</string>
     <string name="pin_desc">Set a 4 to 8 digit PIN code for Safer. It will be required to access your device remotely, lift restrictions, or to uninstall the app.</string>
+    <string name="usbDebugOff">USB debugging not enabled</string>
+    <string name="permsNotGranted">Permissions not granted, make sure that all steps are followed</string>
+    <string name="too_short">Too short</string>
 </resources>
